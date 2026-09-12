@@ -1,7 +1,7 @@
 MAIN=main.cpp
 APP=example
 
-if [ ! -f $APP ]; then rm $APP
+if [-f $APP ]; then rm "$APP"
 fi
 
 g++ $MAIN -o $APP
